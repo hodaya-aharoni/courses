@@ -19,7 +19,10 @@ export const courseSchema = Schema({
             'COOKING',
             'GAMING',
             'PHOTOGRAPHY',   
-            'TRAVEL'] 
+            'TRAVEL',
+            'CONDTORIA',
+            'DIET'
+        ] 
 
     },
     motivation:String,
