@@ -11,9 +11,20 @@ export const courseSchema = Schema({
     price: Number,
     level: {
         type: String,
-        enum: ['EASY', 'MEDIUM', 'HARD'], 
-        default:"EASY"
+       enum: ['EDUCATION',
+            'PROGRAMMING',
+            'DESIGN',
+            'BUSINESS',
+            'MUSIC',
+            'FITNESS',
+            'DEVELOPMENT',
+            'COOKING',
+            'GAMING',
+            'PHOTOGRAPHY',
+            'TRAVEL'] 
+
     },
+    motivation:String,
     locations: [String]
 })
 
