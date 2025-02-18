@@ -1,7 +1,5 @@
 import { Schema, model } from "mongoose"
 
-
-
 export const courseSchema = Schema({
     name: String,
     describe: String,
@@ -9,9 +7,9 @@ export const courseSchema = Schema({
     long: Number,
     img: String,
     price: Number,
-    level: {
+    categories: {
         type: String,
-       enum: ['EDUCATION',
+        enum: ['EDUCATION',
             'PROGRAMMING',
             'DESIGN',
             'BUSINESS',
@@ -20,7 +18,7 @@ export const courseSchema = Schema({
             'DEVELOPMENT',
             'COOKING',
             'GAMING',
-            'PHOTOGRAPHY',
+            'PHOTOGRAPHY',   
             'TRAVEL'] 
 
     },
